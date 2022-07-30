@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 1s ease;
+}
+
+body {
+  background-color: #101820ff;
+  color: #101820ff;
+  max-height: calc(100vh - 9em);
+}
+
+.shape {
+  background-color: yellow;
+  width: 25em;
+  height: 20em;
+  border-radius: 20px;
+  margin: 8em auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #101820ff;
+}
+
+.shape header {
+  font-size: 30px;
+  margin: 30px 0px;
+}
+
+.shape .content {
+  font-size: 20px;
+  max-width: 350px;
+  min-height: 150px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.shape .content .author {
+  margin-top: 20px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.shape .buttons {
+  align-self: flex-end;
+  margin-right: 60px;
+}
+
+.shape .buttons button {
+  margin: 0px 7px;
+  cursor: pointer;
+  padding: 7px 20px;
+  background-color: yellow;
+  color: #101820ff;
+  border: 2px solid #101820ff;
+}
+
+div.settings {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 20em;
+  height: 15em;
+  margin: 0 auto;
+  top: -500px;
+  opacity: 0;
+  background-color: #9e1919;
+  border: 2px solid black;
+  color: white;
+  border-radius: 10px;
+}
+
+div.settings .colors {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.settings .colors div {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+div.settings .colors .colorOne {
+  background-color: yellow;
+}
+
+div.settings .colors .colorTwo {
+  background-color: blue;
+}
+
+div.settings .colors .colorThree {
+  background-color: #222;
+}
+
+div.settings .speed {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.settings .speed div {
+  cursor: pointer;
+}
+
+div.settings .donothing {
+  width: fit-content;
+  margin: -10px auto;
+}
+
+div.settings .donothing .close {
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 7px 20px;
+  background-color: yellow;
+  border-radius: 10px;
+  color: red;
+  border: 2px solid black;
+}
+
+.yellow {
+  background-color: yellow !important;
+  color: #101820ff !important;
+  border-color: #101820ff !important;
+}
+
+.blue {
+  background-color: white !important;
+  color: darkblue !important;
+  border-color: blue !important;
+}
+
+.dark {
+  background-color: #222 !important;
+  color: #e6e6e6 !important;
+  border-color: #e6e6e6 !important;
+}
+
+.yellowBody {
+  background-color: #101820ff !important;
+  color: yellow !important;
+}
+
+.blueBody {
+  background-color: blue !important;
+  color: darkblue !important;
+}
+
+.darkBody {
+  background-color: #222 !important;
+  color: #222 !important;
+}
+
+@media (min-width: 768px) {
+  .shape {
+    width: 35em;
+    height: 22em;
+  }
+  .shape header {
+    font-size: 40px;
+  }
+  .shape .content {
+    font-size: 25px;
+    max-width: 450px;
+    min-height: 170px;
+  }
+  .shape .buttons {
+    margin-right: 70px;
+  }
+  .shape .buttons button {
+    font-size: 14px;
+  }
+  div.settings {
+    width: 23em;
+    height: 18em;
+  }
+  div.settings .colors {
+    width: 300px;
+  }
+  div.settings .colors div {
+    width: 45px;
+    height: 45px;
+  }
+  div.settings .speed {
+    width: 300px;
+  }
+  div.settings .speed div {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

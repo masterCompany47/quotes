@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quoto Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="shape">
+      <header>Quote Generator</header>
+      <div class="content">
+        <div class="text">
+          <p>
+            <i class="fa-solid fa-quote-left"></i>
+            <span
+              >Remember, today is the tomorrow you worried about
+              yesterday.</span
+            >
+            <i class="fa-solid fa-quote-right"></i>
+          </p>
+        </div>
+        <div class="author">__Dale carnegie</div>
+      </div>
+      <div class="buttons">
+        <button class="settings">Settings</button>
+        <!-- <button class="copy">Copy</button> -->
+        <button class="auto">Auto</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+    <div class="settings">
+      <div class="colors">
+        <h2>Colors</h2>
+        <div data-color="yellow" class="colorOne"></div>
+        <div data-color="blue" class="colorTwo"></div>
+        <div data-color="dark" class="colorThree"></div>
+      </div>
+      <div class="speed">
+        <h2>Speed</h2>
+        <div class="slow">Slow</div>
+        <div class="normal">Normal</div>
+        <div class="fast">Fast</div>
+      </div>
+      <div class="donothing">
+        <button class="close">close</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
